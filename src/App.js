@@ -129,9 +129,6 @@ class Manuscripts extends Component {
           if (filter === ms.repo ){
             return <Manuscript key={ms.id} ms={ms} index={i} path={path}/>
           }
-          else{
-            return <Manuscript key={ms.id} ms={ms} index={i} path={path}/>  
-          }
         }
         else {
           return <Manuscript key={ms.id} ms={ms} index={i} path={path}/>
