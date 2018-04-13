@@ -49,14 +49,25 @@ class App extends Component {
 class About extends Component {
   render() {
     return (
-      <p>About</p>
+      <div>
+        <h3>About</h3>
+        <p>A React Site Designed by <a href="http://jeffreycwitt.com">Jeffrey C. Witt</a></p>
+        <p>A <a href="http://lombardpress.org">LombardPress</a> Publication</p>
+        <p>Data Powered by the <a href="http://scta.info">Scholastic Commentaries and Texts Archive</a></p>
+      </div>
     );
   }
 }
 class Home extends Component {
   render() {
     return (
-      <p>Home</p>
+      <div>
+        <h2>Welcome to Lombard in America</h2>
+        <p>A site to explore the journey to America of manuscripts containing
+          Peter Lombard's Sentences and Sentences Commentaries.</p>
+
+      </div>
+
     );
   }
 }
@@ -117,6 +128,9 @@ class Manuscripts extends Component {
         if (filter){
           if (filter === ms.repo ){
             return <Manuscript key={ms.id} ms={ms} index={i} path={path}/>
+          }
+          else{
+            return <Manuscript key={ms.id} ms={ms} index={i} path={path}/>  
           }
         }
         else {
