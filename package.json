@@ -2,7 +2,9 @@
   "name": "lombard_in_america",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://lombardpress.org/lombard-in-america",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.3.1",
     "react-animated-css": "^1.0.4",
     "react-dom": "^16.3.1",
