@@ -194,7 +194,7 @@ const defaultState = {
       id: "marymount25",
       title: "marymount 25",
       repo: "marymount",
-      description: "Single leaf containing part of l4d11c1, all of b4d11c2, and part of b4d11c3"
+      description: "Single leaf containing part of l4d11c1, all of b4d11c2, and part of b4d11c3 "
     }
 
 
