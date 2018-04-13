@@ -97,19 +97,9 @@ class RepoDescription extends Component {
   }
 }
 class Repository extends Component {
-  state = {
-    isVisible: true
-  }
-  componentWillUnmount(){
-    this.setState(() => {
-      return {
-        isVisible: false
-      }
-    })
-  }
   render() {
     return (
-      <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={this.state.isVisible} animationInDelay={0}>
+      <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay={0}>
           <p>{this.props.repo.title}</p>
       </Animated>
 
