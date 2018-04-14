@@ -41,3 +41,10 @@
   padding: 10px;
   color: white;
 }
+
+.image-wrapper{
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+
+}

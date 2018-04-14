@@ -22,6 +22,7 @@ class App extends Component {
             <NavLink className="navlink" exact activeClassName="is-active" to="/about">About</NavLink>
             <NavLink className="navlink" exact activeClassName="is-active" to="/repositories">Repositories</NavLink>
             <NavLink className="navlink" exact activeClassName="is-active" to="/manuscripts">Manuscripts</NavLink>
+            <NavLink className="navlink" exact activeClassName="is-active" to="/images">Images</NavLink>
 
           </header>
           <Switch>
@@ -36,6 +37,10 @@ class App extends Component {
             <Route exact path="/manuscripts" component={Manuscripts}>
             </Route>
             <Route exact path="/manuscripts/:id" component={MsDescription}>
+            </Route>
+            <Route exact path="/images" component={Images}>
+            </Route>
+            <Route exact path="/images/:id" component={ImageDescription}>
             </Route>
 
           </Switch>
@@ -60,11 +65,25 @@ class About extends Component {
 }
 class Home extends Component {
   render() {
+    const displayImageTiles = () => {
+      const images = defaultState.images.slice(0, 5).map((image, i) => {
+        const coordinates = image.on.split("#")[1].split("=")[1];
+        const imagePath = image.default_img_url + "/" + coordinates + "/300,/0/default.jpg";
+        return <img src={imagePath}/>
+    });
+    return images
+  }
     return (
       <div>
-        <h2>Welcome to Lombard in America</h2>
-        <p>A site to explore the journey to America of manuscripts containing
-          Peter Lombard's Sentences and Sentences Commentaries.</p>
+        <div>
+          <h2>Welcome to Lombard in America</h2>
+          <p>A site to explore the journey to America of manuscripts containing
+            Peter Lombard's Sentences and Sentences Commentaries.</p>
+        </div>
+        <div className="image-wrapper">
+          {displayImageTiles()}
+        </div>
+
 
       </div>
 
@@ -177,8 +196,76 @@ class MsDescription extends Component {
 class Manuscript extends Component {
   render() {
     return (
-      <Animated animationIn="bounceInLeft" animationOut="bounceOutLeft" isVisible={this.props.isVisible} animationInDelay={0}>
+      <Animated animationIn="bounceInLeft" animationOut="bounceOutLeft" isVisible={true} animationInDelay={0}>
           <p><Link to={this.props.path}>{this.props.ms.title}</Link></p>
+      </Animated>
+
+    );
+  }
+}
+
+class Images extends Component {
+  render() {
+    const filter = queryString.parse(this.props.location.search).repo;
+
+    const displayImages = () => {
+      const images = defaultState.images.map((image, i) => {
+        const path = "/images/" + i
+        if (filter){
+          if (filter === image.ms ){
+            return <Image key={image["@id"]} image={image} index={i} path={path}/>
+          }
+        }
+        else {
+          return <Image key={image["@id"]} image={image} index={i} path={path}/>
+        }
+      });
+      return images
+    }
+    return (
+      <div className="ms-list">
+        {displayImages()}
+      </div>
+    );
+  }
+}
+class ImageDescription extends Component {
+  render() {
+
+    const displayDescription = () => {
+      const index = this.props.match.params.id;
+      const image = defaultState.images[index]
+      const msIndex = defaultState.mss.findIndex(m => m.id === image.ms);
+      const backPath = "/manuscripts/" + msIndex;
+      const coordinates = image.on.split("#")[1].split("=")[1];
+      const imagePath = image.default_img_url + "/" + coordinates + "/500,/0/default.jpg"
+      if (index){
+        return(
+          <div>
+            <p>
+              <Link to={backPath}>Back to Manuscript</Link> | <Link to="/images">Back to Images</Link>
+            </p>
+            <p>{image.resource.chars}</p>
+            <p><img src={imagePath}/></p>
+          </div>
+        )
+      }
+    }
+    return (
+      <Animated animationIn="bounceInRight" animationOut="bounceOutLeft" isVisible={true}>
+        {displayDescription()}
+      </Animated>
+
+    );
+  }
+}
+class Image extends Component {
+  render() {
+    const coordinates = this.props.image.on.split("#")[1].split("=")[1];
+    const imagePath = this.props.image.default_img_url + "/" + coordinates + "/50,/0/default.jpg"
+    return (
+      <Animated animationIn="bounceInLeft" animationOut="bounceOutLeft" isVisible={true} animationInDelay={0}>
+          <p><Link to={this.props.path}><img src={imagePath}/></Link> {this.props.image.resource.chars}</p>
       </Animated>
 
     );

@@ -196,9 +196,92 @@ const defaultState = {
       repo: "marymount",
       description: "Single leaf containing part of l4d11c1, all of b4d11c2, and part of b4d11c3 "
     }
-
-
-
+  ],
+  images: [
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "annotation-2",
+      "@type": "oa:Annotation",
+      "motivation": ["oa:commenting"],
+      "resource": {
+        "@type": "dctypes:Text",
+        "format": "text/html",
+        "chars": "hopkins, 1r, historiated initial, prologue"
+        },
+      "on": "http://scta.info/iiif/hopkinsMSB19/canvas/4v#xywh=913,370,724,583",
+      "default_img_url": "https://loris2.scta.info/hopkinsMSB19/Lombard_Manuscript-005.jpg",
+      "ms": "hopkinsMSB19"
+    },
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "annotation-1",
+      "@type": "oa:Annotation",
+      "motivation": ["oa:commenting"],
+      "resource": {
+        "@type": "dctypes:Text",
+        "format": "text/html",
+        "chars": "hopkins, 4v, historiated initial"
+        },
+      "on": "http://scta.info/iiif/hopkinsMSB19/canvas/4v#xywh=935,500,1062,1058",
+      "default_img_url": "https://loris2.scta.info/hopkinsMSB19/Lombard_Manuscript-012.jpg",
+      "ms": "hopkinsMSB19"
+    },
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "annotation-3",
+      "@type": "oa:Annotation",
+      "motivation": ["oa:commenting"],
+      "resource": {
+        "@type": "dctypes:Text",
+        "format": "text/html",
+        "chars": "hopkins, initial book 2, folio 56v"
+        },
+      "on": "http://scta.info/iiif/hopkinsMSB19/canvas/56v#xywh=913,353,1255,1238",
+      "default_img_url": "https://loris2.scta.info/hopkinsMSB19/Lombard_Manuscript-116.jpg",
+      "ms": "hopkinsMSB19"
+    },
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "annotation-4",
+      "@type": "oa:Annotation",
+      "motivation": ["oa:commenting"],
+      "resource": {
+        "@type": "dctypes:Text",
+        "format": "text/html",
+        "chars": "hopkins, initial book 3, folio 97r"
+        },
+      "on": "http://scta.info/iiif/hopkinsMSB19/canvas/97r#xywh=570,2044,1055,980",
+      "default_img_url": "https://loris2.scta.info/hopkinsMSB19/Lombard_Manuscript-197.jpg",
+      "ms": "hopkinsMSB19"
+    },
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "annotation-5",
+      "@type": "oa:Annotation",
+      "motivation": ["oa:commenting"],
+      "resource": {
+        "@type": "dctypes:Text",
+        "format": "text/html",
+        "chars": "hopkins book 4 initial, folio 127v"
+        },
+      "on": "http://scta.info/iiif/hopkinsMSB19/canvas/97r#xywh=1443,1767,749,831",
+      "default_img_url": "https://loris2.scta.info/hopkinsMSB19/Lombard_Manuscript-258.jpg",
+      "ms": "hopkinsMSB19"
+    },
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "annotation-6",
+      "@type": "oa:Annotation",
+      "motivation": ["oa:commenting"],
+      "resource": {
+        "@type": "dctypes:Text",
+        "format": "text/html",
+        "chars": "Aquinas, l. 3, d. 1, q. 1"
+        },
+      "on": "https://iiif.lib.harvard.edu/manifests/drs:425873143/canvas/canvas-425873149.json#xywh=342,467,722,663",
+      "default_img_url": "https://ids.lib.harvard.edu/ids/iiif/425873149",
+      "ms": "harv245"
+    },
 
   ]
 }
