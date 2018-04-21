@@ -31,6 +31,14 @@ const defaultState = {
     {
       id: "marymount",
       title: "Loyola Marymount University"
+    },
+    {
+      id: "columbia",
+      title: "Columbia University"
+    },
+    {
+      id: "oberlin",
+      title: "Oberlin University"
     }
   ],
   mss: [
@@ -51,7 +59,7 @@ const defaultState = {
     },
     {
       id: "penn",
-      title: "Penn",
+      title: "Penn 686",
       repo: "upenn",
       description: "penn 686, rothwell text"
     },
@@ -195,7 +203,37 @@ const defaultState = {
       title: "marymount 25",
       repo: "marymount",
       description: "Single leaf containing part of l4d11c1, all of b4d11c2, and part of b4d11c3 "
-    }
+    },
+    {
+      id: "plimpton61",
+      title: "Plimpton MS.61",
+      repo: "columbia",
+      description: "ff. 1-178v contain verses to aid memorization of Lombard "
+    },
+    {
+      id: "plimpton68",
+      title: "Plimpton MS.68",
+      repo: "columbia",
+      description: "ff. 73-92v contain verses to aid memorization of Lombard "
+    },
+    {
+      id: "plimpton89",
+      title: "Plimpton MS.89",
+      repo: "columbia",
+      description: "single leaf, f. 1r-1v, Richard of Middelton "
+    },
+    {
+      id: "oberlinS4",
+      title: "oberlinS4",
+      repo: "oberlin",
+      description: "single leaf, f. 1r-1v, of Lombard, Book 4, d. 14 and beginning of 15"
+    },
+    {
+      id: "penn1131",
+      title: "Penn 1131",
+      repo: "upenn",
+      description: "ff. 94r-153r, commentary on Lombard's Sentences"
+    },
   ],
   images: [
     {
@@ -281,6 +319,20 @@ const defaultState = {
       "on": "https://iiif.lib.harvard.edu/manifests/drs:425873143/canvas/canvas-425873149.json#xywh=342,467,722,663",
       "default_img_url": "https://ids.lib.harvard.edu/ids/iiif/425873149",
       "ms": "harv245"
+    },
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "annotation-7",
+      "@type": "oa:Annotation",
+      "motivation": ["oa:commenting"],
+      "resource": {
+        "@type": "dctypes:Text",
+        "format": "text/html",
+        "chars": "f. 1r, plimpton 61, Lombard, prologue"
+        },
+      "on": "noCanvasID#xywh=300,100,350,400",
+      "default_img_url": "http://vm204.lib.berkeley.edu/iipsrv?IIIF=/ds/columbia/tiles/NNC-RBML.2702A_tile.tif",
+      "ms": "plimpton61"
     },
 
   ]

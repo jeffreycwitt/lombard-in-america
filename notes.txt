@@ -674,3 +674,10 @@ Lovanii : Apud Viduam S. Martini, 1632
 Rating:
 LOCATION	CALL #	STATUS
  Rare Books	 351983  	 RARE - PAGE AEON
+
+
+
+ Digital Scriptorium Results:
+
+ http://www.digital-scriptorium.org/xtf3/search?rmode=digscript;smode=advanced;field1=text;term1=lombard;join1=token;operator1=and;field2=text;join2=token;operator2=and;field3=text;join3=token;datetype=range;docsPerPage=30;startDoc=1
+ http://www.digital-scriptorium.org/xtf3/search?rmode=digscript;smode=advanced;field1=text;term1=lombard;join1=token;operator1=and;field2=text;join2=token;operator2=and;field3=text;join3=token;datetype=range;docsPerPage=30;startDoc=31
