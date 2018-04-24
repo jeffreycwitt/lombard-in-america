@@ -39,7 +39,20 @@ const defaultState = {
     {
       id: "oberlin",
       title: "Oberlin University"
-    }
+    },
+    {
+      id: "usc",
+      title: "University of Southern California"
+    },
+    {
+      id: "lilly",
+      title: "Lilly Library, Indiana University"
+    },
+    {
+      id: "wellesley",
+      title: "Wellesely University"
+    },
+
   ],
   mss: [
     {
@@ -98,6 +111,12 @@ const defaultState = {
       repo: "walters"
     },
     {
+      id: "walt83",
+      title: "Walter 83",
+      repo: "walters",
+      description: "Commentary by Durandus, see de ricci, I, p. 880n83"
+    },
+    {
       id: "pfllewisE141",
       title: "Free Library PFL Lewis E141",
       repo: "freelibrary"
@@ -154,11 +173,6 @@ const defaultState = {
     },
     {
       id: "beinecke712.131",
-      title: "beinecke712.131",
-      repo: "yale"
-    },
-    {
-      id: "newberry",
       title: "beinecke712.131",
       repo: "yale"
     },
@@ -233,6 +247,36 @@ const defaultState = {
       title: "Penn 1131",
       repo: "upenn",
       description: "ff. 94r-153r, commentary on Lombard's Sentences"
+    },
+    {
+      id: "usc2",
+      title: "USC 2",
+      repo: "usc",
+      description: "Lombard, Sentences, Four books"
+    },
+    {
+      id: "usc3",
+      title: "USC 3",
+      repo: "usc",
+      description: "Peter Palude, Commentary on the Sentences"
+    },
+    {
+      id: "usc3",
+      title: "USC 3",
+      repo: "usc",
+      description: "Peter Palude, Commentary on the Sentences"
+    },
+    {
+      id: "ricketts185",
+      title: "Ricketts 185",
+      repo: "lilly",
+      description: "Lombard Sentences, with commentary, now at Lilly Library"
+    },
+    {
+      id: "wellesleyP808",
+      title: "wellesleyP808",
+      repo: "wellesley",
+      description: "Richard of Middelton, Commentary on Book II"
     },
   ],
   images: [

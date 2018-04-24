@@ -681,3 +681,14 @@ LOCATION	CALL #	STATUS
 
  http://www.digital-scriptorium.org/xtf3/search?rmode=digscript;smode=advanced;field1=text;term1=lombard;join1=token;operator1=and;field2=text;join2=token;operator2=and;field3=text;join3=token;datetype=range;docsPerPage=30;startDoc=1
  http://www.digital-scriptorium.org/xtf3/search?rmode=digscript;smode=advanced;field1=text;term1=lombard;join1=token;operator1=and;field2=text;join2=token;operator2=and;field3=text;join3=token;datetype=range;docsPerPage=30;startDoc=31
+
+
+Library of congress, Thomas Aquinas Commentary on the Sentences, De ricci, I, p. 185, n. 20
+Holy Name College, Francis Mayronis, Commentary on Book I, De ricci, I, p. 481, n. 68
+Holy Name College, Bonaventure, Commentary on Book III, De ricci, I, p. 483, n. 86
+Holy Name College, Castro Novo, Commentary on Book IV, De ricci, I, p. 484, n. 88
+Holy Name College, Bonaventure, Commentary on Book III, De ricci, I, p. 484, n. 89
+Holy Name College, Alexander of Hales, Commentary on Book IV, De ricci, I, p. 484, n. 90
+
+Anonymous, Commentary on Book I, Newberry Library, De ricci, I, p. 526, n. 23834
+Harvard, Norton 1002, Questions on book II, De ricci, I, p. 997, Norton 1002
